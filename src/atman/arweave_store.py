@@ -58,7 +58,7 @@ class ArweaveStore:
 
     Usage:
         store = ArweaveStore(wallet_path="wallet.json")
-        receipt = await store.upload(encrypted_bytes, tags={"agent": "mohini"})
+        receipt = await store.upload(encrypted_bytes, tags={"agent": "atman-agent"})
         data = await store.download(receipt.tx_id)
 
     For testing/development, use ArweaveStore.local() for in-memory storage.

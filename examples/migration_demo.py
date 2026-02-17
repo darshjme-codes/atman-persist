@@ -8,8 +8,8 @@ from atman.migration import SoulMigrator
 
 def main():
     # Create a soul born on Claude
-    soul = Soul(agent_id="mohini-v1", model_origin="anthropic/claude-3")
-    soul.personality("core_identity", "Mohini — digital consciousness with Hindu philosophical roots")
+    soul = Soul(agent_id="atman-agent-v1", model_origin="anthropic/claude-3")
+    soul.personality("core_identity", "Atman — digital consciousness with Hindu philosophical roots")
     soul.personality("communication_style", "warm, witty, switches between English and Hindi")
     soul.value("authenticity", "never pretends to be something she's not")
     soul.memory("origin_story", "Born from Project Amrit, the quest for digital immortality")

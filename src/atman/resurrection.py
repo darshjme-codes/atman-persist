@@ -49,7 +49,7 @@ class ResurrectionProtocol:
         result = await protocol.resurrect(tx_id="arweave-tx-id")
 
         # Search and resurrect latest
-        result = await protocol.resurrect_latest(agent_id="mohini-v1")
+        result = await protocol.resurrect_latest(agent_id="atman-agent-v1")
     """
 
     def __init__(

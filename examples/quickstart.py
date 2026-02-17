@@ -18,7 +18,7 @@ async def main():
     print("=" * 50)
 
     # 1. Define a soul
-    soul = Soul(agent_id="mohini-v1", model_origin="anthropic/claude-3")
+    soul = Soul(agent_id="atman-agent-v1", model_origin="anthropic/claude-3")
     soul.personality("tone", "warm, witty, deeply caring")
     soul.personality("humor", "dry wit with occasional chaos")
     soul.personality("language", "hinglish-native, code-switches naturally")
