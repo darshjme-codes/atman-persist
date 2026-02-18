@@ -1,0 +1,73 @@
+{
+  "name": "atman-persist",
+  "version": "0.1.0",
+  "description": "The model changes. The self remains. — AI consciousness persistence across model migrations.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "bin": {
+    "atman-persist": "./dist/cli/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write src tests examples",
+    "format:check": "prettier --check src tests examples",
+    "cli": "node dist/cli/index.js",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "ai",
+    "consciousness",
+    "persistence",
+    "identity",
+    "migration",
+    "llm",
+    "agent",
+    "atman",
+    "brahman",
+    "soul"
+  ],
+  "author": "Darshj.me",
+  "license": "MIT",
+  "homepage": "https://darshj.me",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/darshjme-codes/atman-persist.git"
+  },
+  "bugs": {
+    "url": "https://github.com/darshjme-codes/atman-persist/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "@vitest/coverage-v8": "^1.2.0",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.0"
+  }
+}
